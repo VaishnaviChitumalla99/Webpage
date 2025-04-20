@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>My Trips - TripSphere</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0fdfc;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #00897b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #004d40;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 30px;
+    }
+    table {
+      width: 90%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+    thead {
+      background-color: #b2ebf2;
+    }
+    th {
+      padding: 15px;
+      text-align: left;
+      font-size: 16px;
+      font-weight: bold;
+      color: #004d40;
+    }
+    td {
+      padding: 12px 15px;
+      font-size: 15px;
+      color: #333;
+      border-bottom: 1px solid #ccc;
+    }
+    tr:hover td {
+      background-color: #e0f2f1;
+    }
+  </style>
+  <script src="js/crud.js" defer></script>
+</head>
+<body>
+  <header><h1>My Saved Trips</h1></header>
+  <nav>
+    <a href="index.html">Home</a>
+      <a href="charts.html">Dashboard</a>
+      <a href="database.html">Book Now</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+  </nav>
+  <section>
+    <table id="tripTable">
+      <thead>
+        <tr>
+          <th>Destination</th>
+          <th>Country</th>
+          <th>Duration</th>
+          <th>Budget</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JS inserts here -->
+      </tbody>
+    </table>
+  </section>
+</body>
+</html>
