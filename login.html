@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/auth.js" defer></script>
+</head>
+<body>
+  <div class="auth-form-container">
+    <form class="auth-form" onsubmit="loginUser(event)">
+      <h2>Login to TripSphere</h2>
+      <label>Email:</label>
+      <input type="email" id="login-email" placeholder="Enter Email" required>
+      <label>Password:</label>
+      <input type="password" id="login-password" placeholder="Enter Password" required>
+      <button type="submit" class="login-btn">Login</button>
+      <a href="#" class="auth-link">Forgot Password?</a>
+      <p>Don't have an account? <a href="signup.html" class="auth-link">Sign up here</a></p>
+    </form>
+  </div>
+</body>
+</html>
