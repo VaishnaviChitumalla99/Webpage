@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Feedback – TripSphere</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/index-feedback.js" defer></script>
+</head>
+<body>
+
+  <header>
+<div class="logo-container">
+      <img src="img/logo.jpg" alt="TripSphere Logo" class="logo">
+    <h1>Share Your Travel Feedback</h1>
+</div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="charts.html">Dashboard</a>
+      <a href="database.html">Book Now</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="feedbackForm">
+      <label>Upload Photo:</label><br>
+      <input type="file" id="photo" accept="image/*"><br><br>
+
+      <label>Destination:</label><br>
+      <input type="text" id="destination" required><br><br>
+
+      <label>Rating:</label><br>
+      <select id="rating" required>
+        <option value="">Select</option>
+        <option value="1">1 Star</option>
+        <option value="2">2 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="5">5 Stars</option>
+      </select><br><br>
+
+      <label>Comments:</label><br>
+      <textarea id="comments" required></textarea><br><br>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </main>
+</body>
+</html>

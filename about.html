@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TripSphere - About Us</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .github-link {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 16px;
+      background-color: #333;
+      color: #fff;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .github-link:hover {
+      background-color: #555;
+    }
+
+    header {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="https://github.com/VaishnaviChitumalla99/Webpage" target="_blank" class="github-link">GitHub Repo</a>
+
+    <div class="logo-container">
+      <img src="img/logo.jpg" alt="TripSphere Logo" class="logo">
+      <h1>TripSphere City-to-Country Travel Explorer</h1>
+    </div>
+
+    <h1>About TripSphere</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="charts.html">Dashboard</a>
+      <a href="database.html">Book Now</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Meet the Team</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="img/Namratha.jpeg" alt="Namratha Vardhineni" class="team-photo">
+          <h4>Namratha Vardhineni</h4>
+          <p><strong>Role:</strong> Developer & Data Analyst</p>
+          <p><strong>Contributions:</strong> Designed the static website layout, implemented Chart.js visualizations, and handled data integration for international trends.</p>
+        </div>
+
+        <div class="card">
+          <img src="img/Ankita.jpeg" alt="Ankita Tripathy" class="team-photo">
+          <h4>Ankita Tripathy</h4>
+          <p><strong>Role:</strong> UI/UX Designer</p>
+          <p><strong>Contributions:</strong> Styled the interface, ensured responsiveness for all devices, created user-centric pages, and managed the homepage and navigation system.</p>
+        </div>
+
+        <div class="card">
+          <img src="img/subham.jpeg" alt="Subham Mohanty" class="team-photo">
+          <h4>Subham Mohanty</h4>
+          <p><strong>Role:</strong> Data Collector & Visualizer</p>
+          <p><strong>Contributions:</strong> Collected and processed dummy data, supported the creation of travel trend insights, and helped structure the charts and visual elements.</p>
+        </div>
+
+        <div class="card">
+          <img src="img/vaishnavi.jpg" alt="Vaishnavi Chittumalla" class="team-photo">
+          <h4>Vaishnavi Chittumalla</h4>
+          <p><strong>Role:</strong> GitHub & Documentation Manager</p>
+          <p><strong>Contributions:</strong> Maintained project repository, coordinated commits, organized team content, and compiled the final documentation for submission.</p>
+        </div>
+      </div>
+
+      <h2>Logical Data Model</h2>
+      <p>In the TripSphere data model, each <strong>User</strong> can have multiple <strong>Trips</strong>, establishing a one-to-many relationship between User and Trip. Similarly, each <strong>Trip</strong> can include multiple <strong>Destinations</strong>, forming another one-to-many relationship between Trip and Destination.</p>
+      <img src="img/data_model.jpeg" alt="Data Model" width="500">
+    </section>
+  </main>
+</body>
+</html>
