@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>TripSphere - Trip Database</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/crud.js" defer></script>
+  <style>
+    .success-msg {
+      margin-top: 10px;
+      color: green;
+      font-weight: bold;
+      display: none;
+    }
+    table {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background: #fff;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border: 1px solid #ccc;
+    }
+    thead {
+      background-color: #b2ebf2;
+    }
+    h3 {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+<div class="logo-container">
+      <img src="img/logo.jpg" alt="TripSphere Logo" class="logo">
+      <h1>TripSphere Trip Records</h1>
+    </div>
+       <nav>
+      <a href="index.html">Home</a>
+      <a href="charts.html">Dashboard</a>
+      <a href="database.html">Book Now</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+
+
+  <main>
+    <form id="tripForm">
+      <input type="text" name="destination" placeholder="Destination" required>
+      <input type="text" name="country" placeholder="Country" required>
+      <input type="text" name="duration" placeholder="Duration (e.g. 5 Days)" required>
+      <input type="text" name="budget" placeholder="Budget (e.g. $1500)" required>
+      <button type="submit">Add Trip</button>
+    </form>
+
+    <div id="successMsg" class="success-msg">Trip added successfully!</div>
+
+    <h3>Live Preview of Saved Trips</h3>
+    <table id="tripTable">
+      <thead>
+        <tr>
+          <th>Destination</th>
+          <th>Country</th>
+          <th>Duration</th>
+          <th>Budget</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JS will insert trip rows here -->
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

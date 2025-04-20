@@ -1,0 +1,550 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to bottom right, #e0f2f1, #ffffff);
+  color: #333;
+}
+
+/* Header & Navigation */
+header {
+  background: linear-gradient(90deg, #00796b, #26a69a);
+  padding: 25px 15px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  margin: 0 10px;
+  padding: 10px 16px;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: #00796b;
+}
+
+/* Headings */
+h1, h2 {
+  color: #00695c;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 40px;
+  color: #00897b;
+}
+
+/* Section Layout */
+main {
+  padding: 30px;
+}
+
+section {
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Centered Banner Image */
+.banner-img {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Buttons */
+.crud-buttons,
+button,
+.button {
+  background: linear-gradient(to right, #ff7043, #ff8a65);
+  color: white;
+  padding: 12px 24px;
+  margin: 10px 10px 0 0;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+  background: linear-gradient(to right, #d84315, #ff7043);
+  transform: translateY(-2px);
+}
+
+/* Form Styling */
+form {
+  max-width: 650px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  margin-inline: auto;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 12px;
+  margin: 16px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Travel Cards */
+.travel-card {
+  background-color: #e8f5e9;
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 6px solid #66bb6a;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Chart Canvases */
+canvas {
+  display: block;
+  max-width: 720px;
+  margin: 25px auto;
+  border: 1px solid #81d4fa;
+  border-radius: 12px;
+  background-color: #e3f2fd;
+}
+
+/* Table Styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #b2ebf2;
+  color: #004d40;
+}
+
+/* Delete Page List */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 25px;
+}
+
+ul li {
+  background: #ffebee;
+  margin-bottom: 12px;
+  padding: 15px;
+  border-left: 6px solid #ef5350;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+ul li button {
+  background-color: #e53935;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+ul li button:hover {
+  background-color: #c62828;
+}
+
+/* Image Gallery */
+#gallery {
+  margin-top: 50px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.gallery-item {
+  background: #fff3e0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding-bottom: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #ffccbc;
+}
+
+.gallery-item p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #e64a19;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+/* Cards for About Us */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.team-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.card h4 {
+  margin: 10px 0 5px;
+  color: #007BFF;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 8px auto;
+    width: fit-content;
+  }
+
+  canvas {
+    width: 100% !important;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .button, button {
+    display: block;
+    margin-bottom: 12px;
+    width: fit-content;
+  }
+
+  table, ul {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* === Background Video Welcome Section === */
+#welcome-video {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.video-overlay {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.video-overlay h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.video-overlay p {
+  font-size: 1.5rem;
+}
+.auth-buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #004d40;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #00796b;
+}
+
+    .auth-button {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      z-index: 1000;
+    }
+
+    .auth-button button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      font-size: 14px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .auth-button button:hover {
+      background-color: #0056b3;
+    }
+
+    header {
+      padding-top: 60px; /* Space for top button */
+    }
+
+    nav a {
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0fdfc;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #00897b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #004d40;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section, main {
+      padding: 30px;
+    }
+    table {
+      width: 50%;
+      margin: 0 auto 50px auto;
+      border-collapse: collapse;
+    }
+    thead {
+      background-color: #b2ebf2;
+    }
+    th {
+      padding: 15px;
+      text-align: left;
+      font-size: 16px;
+      font-weight: bold;
+      color: #004d40;
+    }
+    td {
+      padding: 12px 15px;
+      font-size: 15px;
+      color: #333;
+      border-bottom: 1px solid #ccc;
+    }
+    tr:hover td {
+      background-color: #e0f2f1;
+    }
+    canvas {
+      display: block;
+      margin: 20px auto;
+    }
+    h3 {
+      text-align: center;
+      color: #004d40;
+    }
+.about-background {
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)),
+              url('../img/travel_banner.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.contact-background {
+  background: linear-gradient(
+                to bottom right,
+                rgba(255, 255, 255, 0.5),
+                rgba(255, 255, 255, 0.4)
+              ),
+              url('../img/travel_banner.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.contact-center {
+  text-align: center;
+  min-height: 400px; /*⬅️ Increases vertical length */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-center {
+  text-align: center;
+}
+
+
+/* === Login/Signup Button and Greeting === */
+.auth-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.login-button {
+  background: #ff9800;
+  padding: 6px 12px;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.login-button:hover {
+  background-color: #e65100;
+}
+
+.auth-button button {
+  background: #c62828;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.auth-button span {
+  font-size: 12px;
+  color: white;
+}
+
+.greeting-user {
+  font-size: 1.2rem;
+  margin-top: 12px;
+  font-weight: 500;
+  color: #fff59d;
+}

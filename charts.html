@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+<header>
+    <div class="logo-container">
+      <img src="img/logo.jpg" alt="TripSphere Logo" class="logo">
+      <h1>TripSphere - My Trips & Trend Charts</h1>
+    </div>
+
+  <title>TripSphere - Trips & Trends</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/chart.js" defer></script>
+  <script src="js/crud.js" defer></script>
+  </head>
+<body>
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="charts.html">Dashboard</a>
+    <a href="database.html">Book Now</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <!-- Read Section (Trip Table) -->
+  <section>
+    <h2 style="text-align:center; color:#004d40;">My Saved Trips</h2>
+    <table id="tripTable">
+      <thead>
+        <tr>
+          <th>Destination</th>
+          <th>Country</th>
+          <th>Duration</th>
+          <th>Budget</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JS will render trip data here -->
+      </tbody>
+    </table>
+
+    <div class="crud-buttons" style="margin-top: 30px; text-align: center;">
+      <button onclick="location.href='modify.html?index=0'"> Modify/update Trip</button>
+      <button onclick="location.href='delete.html'"> Delete Trip</button>
+    </div>
+  </section>
+
+  <!-- Chart Section -->
+  <main>
+    <h3>Bar Chart - Destination</h3>
+    <canvas id="chart1" width="600" height="300"></canvas>
+
+    <h3>Line Chart - Country</h3>
+    <canvas id="chart2" width="600" height="300"></canvas>
+
+    <h3>Pie Chart - Duration</h3>
+    <canvas id="chart3" width="600" height="300"></canvas>
+
+    <h3>Doughnut Chart - Budget</h3>
+    <canvas id="chart4" width="400" height="400"></canvas>
+  </main>
+</body>
+</html>
