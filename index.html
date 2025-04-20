@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TripSphere Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/index-feedback.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="img/logo.jpg" alt="TripSphere Logo" class="logo">
+      <h1>TripSphere City-to-Country Travel Explorer</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="charts.html">Dashboard</a>
+      <a href="database.html">Book Now</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html">Login / Sign Up</a> <!-- Navigation link kept -->
+    </nav>
+  </header>
+
+  <main>
+    <!-- Background Video Section -->
+    <section id="welcome-video">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="img/vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay">
+        <h2>Welcome to TripSphere</h2>
+        <p>Your personal travel planner for both domestic and international adventures!</p>
+      </div>
+    </section>
+
+    <!-- Destination Gallery -->
+    <section id="gallery">
+      <h2>Popular Destinations</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="img/Australia.jpg" alt="Australia"><p>Australia</p></div>
+        <div class="gallery-item"><img src="img/paris.jpg" alt="Paris"><p>Paris, France</p></div>
+        <div class="gallery-item"><img src="img/usa.jpg" alt="USA"><p>United States</p></div>
+        <div class="gallery-item"><img src="img/Dubai.jpg" alt="Dubai"><p>Dubai</p></div>
+        <div class="gallery-item"><img src="img/Italy.jpg" alt="Italy"><p>Italy</p></div>
+        <div class="gallery-item"><img src="img/Greece.jpg" alt="Greece"><p>Greece</p></div>
+        <div class="gallery-item"><img src="img/India.jpg" alt="India"><p>India</p></div>
+        <div class="gallery-item"><img src="img/japan.jpg" alt="Japan"><p>Japan</p></div>
+        <div class="gallery-item"><img src="img/china.jpg" alt="China"><p>China</p></div>
+        <div class="gallery-item"><img src="img/london.jpg" alt="London"><p>London, UK</p></div>
+      </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedbackDisplay">
+      <h2 style="text-align:center;">What Travelers Say</h2>
+      <div id="feedbackList" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;"></div>
+    </section>
+  </main>
+
+</body>
+</html>
