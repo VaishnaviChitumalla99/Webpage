@@ -1,0 +1,15 @@
+Consolidated Self-Reflection—Vaishnavi Chitumalla
+
+Contributions to the Project
+I contributed to the project as the Frontend Developer & GitHub Manager. My responsibilities included designing and implementing the Contact Us, Feedback, and About Us pages, ensuring they followed a clean layout and responsive structure. I enhanced the Feedback form with features such as image upload, rating selection, and comment submission to improve user interactivity. Additionally, I structured the About Us page to visually present each team member’s role and contribution using a card-based layout with team photos. On the version control side, I managed our GitHub repository by maintaining consistent versioning, pushing regular updates, and resolving merge conflicts when collaborating with the team.
+
+Challenges Faced and How They Were Addressed
+During the development process, I faced a few key challenges. One issue involved CSS conflicts across pages, where global styles were unintentionally affecting certain components. To fix this, I scoped specific styles using unique class names and adjusted the structure to prevent unintended overrides.
+Additionally, I encountered form validation issues on the Feedback page, where blank submissions were being accepted despite using required attributes. To resolve this, I implemented client-side JavaScript validation to reinforce form integrity and improve the user experience.
+
+ Key Learnings
+Throughout this project, I gained valuable experience in resolving real-time Git conflicts and maintaining a clean commit history. I learned how to debug UI issues across multiple pages, implement interactive elements effectively, and maintain design consistency throughout the site. Moreover, this project helped me strengthen my understanding of collaborative web development workflows using GitHub and emphasized the importance of communication and coordination within a team.
+
+ Time Spent
+In total, I spent approximately 18–20 hours on this project. This time was dedicated to designing, coding, and testing the web pages; managing GitHub commits and branches; fixing UI bugs and merge issues.
+
