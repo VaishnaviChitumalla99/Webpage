@@ -1,0 +1,24 @@
+Consolidated Self-Reflection Document 
+Name: Subham Mohanty
+
+Roles Undertaken in the Project:
+
+1. Authentication Flow Implementer: Developed a complete front-end login and signup authentication system using HTML, CSS, and JavaScript, leveraging localStorage to simulate user sessions without a backend.
+2. UI/UX Integrator: Integrated dynamic authentication features and personalized user greetings into the existing web layout while preserving original design aesthetics, ensuring seamless and intuitive user experience.
+
+Contributions to the Project:
+
+I developed the index.html, login.html, and signup.html pages for our website and implemented user authentication flow using front-end JavaScript. I added logic to display personalized greetings after login or signup and integrated a dynamic logout feature. All styling and layout decisions respected the original design while introducing a smooth, intuitive user experience.
+Challenges Faced and Solutions:
+
+One of the main challenges I encountered was implementing an authentication flow without any backend infrastructure. Traditional login/signup systems require server-side validation, session management, and secure storage—none of which were available in this front-end-only setup. To overcome this, I leveraged the browser's localStorage to simulate session management by temporarily storing the username. Using JavaScript, I detected the stored session and dynamically updated the UI to show a personalized greeting and logout button. Additionally, I integrated this flow seamlessly into the existing index.html without modifying its original structure, keeping the code modular and minimally invasive. Scoped CSS rules ensured styling remained consistent and did not interfere with existing components.
+Another key challenge was ensuring smooth user redirection and interface responsiveness. I implemented validation logic and event handling to redirect users back to the homepage only after valid login or signup. This redirection also triggered dynamic greetings, enhancing the overall user experience. During testing, I found layout inconsistencies across screen sizes, especially with the auth button and greeting placement. These issues were resolved using responsive CSS and media queries, ensuring that the UI behaved consistently across both desktop and mobile platforms.
+
+Key Learnings and Time Spent:
+
+This project helped me strengthen my skills in DOM manipulation, client-side session handling, responsive UI integration, and modular coding. I learned how to merge new features into existing layouts without disrupting visual design or performance.
+Total Time Spent: Approximately 12–14 hours on design, development, integration, and testing.
+
+http://myweb.usf.edu/~skmohanty/static_web_page/js/
+
+https://github.com/VaishnaviChitumalla99/Webpage
