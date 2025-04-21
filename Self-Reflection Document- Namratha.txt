@@ -1,0 +1,19 @@
+ Self-Reflection Document
+
+Namratha Vardhineni
+Role: Developer & Data Analyst
+What I did:
+•	I created charts using Chart.js on the charts.html page to show travel trends.
+•	I worked on the database page where users can book trips.
+•	I wrote the CSS code to style the website and make it look neat and clean.
+•	I helped design and plan how the website should look and work.
+Challenges I faced:
+•	It was hard at first to make the charts work correctly using Chart.js.
+•	Making sure the website looked good on all devices was also a challenge.
+•	I solved these problems by reading documentation, testing the website, and taking feedback from my teammates.
+What I learned:
+•	I learned how to use Chart.js to make different types of charts.
+•	I improved my skills in CSS and how to design websites that work well on phones and computers.
+•	I also learned how important teamwork and good planning are in a group project.
+Time spent: Around 20 hours
+
